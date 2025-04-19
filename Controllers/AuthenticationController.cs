@@ -55,6 +55,7 @@ namespace MoodLoggerApi.Controllers
 
             if (loginResponse == null)
             {
+
                 // AuthService null döndüyse, e-posta/şifre yanlıştır.
                 return Unauthorized(new { message = "Geçersiz e-posta veya şifre." });
             }
